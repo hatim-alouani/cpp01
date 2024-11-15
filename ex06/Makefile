@@ -8,7 +8,7 @@ all: $(NAME)
 $(NAME): $(OBJS) $(HEADER)
 	$(CC) -o $(NAME) $(OBJS)
 
-%.o: %.cpp Harl.hpp
+%.o: %.cpp $(HEADER)
 	$(CC) -c $< -o $@	
 
 clean: 
