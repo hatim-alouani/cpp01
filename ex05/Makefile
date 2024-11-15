@@ -1,15 +1,14 @@
-SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
-NAME = UnnecessaryViolence
+SRCS = main.cpp Harl.cpp
+NAME = Harl
 CC = c++ -Wall -Wextra -Werror -std=c++98
 OBJS = ${SRCS:.cpp=.o}
-HEADER = Weapon.hpp HumanA.hpp HumanB.hpp
-
+HEADER = Harl.hpp
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(HEADER)
 	$(CC) -o $(NAME) $(OBJS)
 
-%.o: %.cpp $(HEADER)
+%.o: %.cpp Harl.hpp
 	$(CC) -c $< -o $@	
 
 clean: 

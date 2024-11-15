@@ -1,8 +1,13 @@
 #include "Zombie.hpp"
 
 int main(){
-    Zombie *zombie1 = Zombie::newZombie("Zombie1");
+    Zombie *zombie1 = newZombie("Zombie1");
+    if (!zombie1)
+    {
+        std::cout << "Allocation failed" << std::endl;
+        exit(0);
+    }
     zombie1->announce();
-    Zombie::randomChump("Zombie2");
+    randomChump("Zombie2");
     delete zombie1;
 }

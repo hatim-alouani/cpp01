@@ -8,6 +8,8 @@ std::string myReplace(std::string line, std::string search, std::string replace)
     size_t lenSearch = search.length();
     size_t lenLine = line.length();
 
+    if (search == "" || replace == "" || search == " " || replace == " ")
+        return line;
     while (pos < lenLine){
         size_t found = line.find(search, pos);
         if (found == std::string::npos)
