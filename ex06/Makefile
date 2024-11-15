@@ -1,5 +1,5 @@
 SRCS = main.cpp Harl.cpp
-NAME = Harl
+NAME = harlFilter
 CC = c++ -Wall -Wextra -Werror -std=c++98
 OBJS = ${SRCS:.cpp=.o}
 HEADER = Harl.hpp

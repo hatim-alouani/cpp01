@@ -10,4 +10,5 @@ int main(){
     zombie1->announce();
     randomChump("Zombie2");
     delete zombie1;
+    return 0;
 }
