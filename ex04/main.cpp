@@ -54,5 +54,4 @@ int main(int arc, char **arv){
     file.close();
     replaceFile.close();
     std::cout << "Processing..." << std::endl << "Processing complete";
-    return 0; 
 }

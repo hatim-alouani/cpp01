@@ -10,5 +10,4 @@ int main (int arc, char **arv)
 	std::string level = arv[1];
 	Harl harl;
 	harl.complain(level);
-	return (0);
 }

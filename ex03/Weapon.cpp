@@ -4,18 +4,14 @@ Weapon::Weapon(){}
 
 Weapon::Weapon(std::string type){
     this->type = type;
-    return ;
 }
 
-Weapon::~Weapon(){
-    return ;
-}
+Weapon::~Weapon(){}
 
 void Weapon::setType(std::string type){
     this->type = type;
-    return ;
 }
 
-std::string Weapon::getType(void) const{
+const std::string &Weapon::getType(void) {
     return type;
 }
